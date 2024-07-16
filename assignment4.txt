@@ -1,0 +1,38 @@
+1. What is the difference between instance methods and static methods?
+
+	Instance method are declared in the prototype of the class and have the functionality which will be assigned by the class. With
+	'this' operator they can read or write the properties of the class.
+
+	Whereas in the case of static methods, it will be directly declared inside the class itself when compared to that of Instance 
+	method. The static method cannot read or write properties which are assigned to the instance of the class.
+
+	The static method can be used when they are independent to that of instance specific properties.
+
+
+2. How does Javascript handle concurrency?
+
+	JavaScript uses an event loop to handle multiple tasks at the same time. The event loop repeatedly checks a list of tasks and 
+	decides which one to run next. It keeps looking at the list over and over, making sure tasks are done in the right order and 
+	giving priority to important ones. This way, JavaScript can manage many things happening at once without getting confused.
+
+
+3. What is async/await? How does it differ from using the promise instance methods?
+
+	Async and await are tools in JavaScript that make working with asynchronous code easier. Async function will always return a promise
+	and can wait for that operation to happen. This makes the code look and behave more like synchronous code, meaning it runs 
+	in order from top to bottom, which is easier to read and understand.
+
+	Promise is a function which enables async and await, meaning the promise handles response in case of success of the operation
+	reject in case of the failure of operations.
+
+
+4. Can you use await outside of an async function?
+
+	No, the await cannot be outside of async function because it is a part of the async which enable async program to wait for the
+	promise.
+
+
+5. What is callback hell and why is it considered a problem?
+
+	The callback hell is generally denotes the nested callback functions, where for simple task and when we nested callback functions
+	its pretty complicated to read and understand the code. Thats why we are using async and await for avoiding call back hell.
